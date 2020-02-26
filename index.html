@@ -1,0 +1,478 @@
+<title></title>
+<!-- Required meta tags -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" type="text/css" href="https://pattern-library.airmiles.ca/latest/css/style.min.css">
+
+<style type="text/css">
+    @import url("https://use.typekit.net/xyu1pir.css");
+
+    /****** ATG FIXES ****/
+    .airmiles-bootstrap-header-footer .navbar {
+        margin-bottom: 0px !important;
+    }
+
+    .one-column-page-nonredeemable br {
+        display: none;
+    }
+
+    #master_container {
+        overflow: hidden;
+    }
+
+    #rewardsNavContainer {
+        display: none;
+    }
+
+    .right-column #header {
+        padding-top: 0px;
+    }
+
+    #rewards-container {
+        width: 100%;
+        display: block !important;
+    }
+
+    #rewards-content {
+        width: 100%;
+    }
+
+    #page-content-and-menu .right-column {
+        width: 100%;
+    }
+
+    #extra-content {
+        display: none;
+    }
+
+    #rewards-breadcrumb {
+        display: none;
+    }
+
+    #rewards-content.after_breadcrumb {
+        border: none !important
+    }
+
+    .right-column #header h1 {
+        display: none;
+        padding-top: 0px !important;
+    }
+
+    @media only screen and (max-width : 767px) {
+        .mobile-button-center {
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .bootstrap .napoleon-table {
+            display: none;
+        }
+    }
+
+    .bootstrap body {
+        font-family: 'omnes', Arial, sans-serif;
+        color: #5e5e5e !important;
+        font-size: 16px !important;
+    }
+
+    .bootstrap p {
+        font-family: 'omnes', Arial, sans-serif;
+        color: #5e5e5e !important;
+        font-size: 16px !important;
+        line-height: 24px !important;
+        padding-bottom: 25px;
+    }
+
+    .bootstrap h1,
+    h2,
+    h3,
+    h4 {
+        font-family: 'omnes', Arial, sans-serif !important;
+        color: #1790cc !important;
+        font-style: normal !important;
+        color: #1790cc !important;
+    }
+
+    .bootstrap h1 {
+        font-size: 50px !important;
+        padding-top: 40px !important;
+        padding-bottom: 35px !important;
+        font-weight: 200 !important;
+    }
+
+    .bootstrap h2 {
+        font-size: 48px !important;
+        font-weight: 200 !important;
+        color: #000 !important;
+        margin: 0px !important;
+        padding-bottom: 15px !important;
+        padding-top: 15px;
+    }
+
+    .bootstrap h3 {
+        width: 100% !important;
+        font-size: 30px !important;
+        font-weight: 200 !important;
+        color: #5e5e5e !important;
+        padding-top: 60px !important;
+    }
+
+    .bootstrap h4 {
+        font-size: 25px !important;
+        font-weight: 200 !important;
+        color: #5e5e5e !important;
+    }
+
+    .bootstrap a {
+        color: #1790cc !important;
+        text-decoration: none !important;
+    }
+
+    .bootstrap ul li {
+        list-style: disc !important;
+        font-family: 'omnes', Arial, sans-serif;
+        color: #5e5e5e !important;
+        font-size: 16px !important;
+    }
+
+    @media (min-width:320px) {
+        .bootstrap .logo-center {
+            position: absolute;
+            top: -4%;
+            left: 50%;
+            width: 160px;
+            margin-top: -48.5px;
+            margin-left: -80px;
+        }
+
+    }
+
+    @media (min-width: 768px) {
+        .bootstrap .fixed-width {
+            flex: 0 0 980px;
+            max-width: 980px;
+        }
+
+        .bootstrap .logo-center {
+            position: absolute;
+            top: -4%;
+            left: 50%;
+            width: 238px;
+            height: 97px;
+            margin-top: -60px;
+            margin-left: -119px;
+        }
+    }
+
+    .bootstrap .container {
+        width: @container-desktop  !important;
+    }
+
+    .bootstrap .img-header {
+        position: relative;
+        margin-top: 80px;
+    }
+
+    .bootstrap .avail-text {
+        font-size: 14px !important;
+        padding-top: 18px;
+    }
+
+    .bootstrap .border-bottom {
+        border-bottom: solid 1px #cbcbcc;
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
+
+    .bootstrap .border-bottom-none {
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
+
+    .bootstrap .table-title {
+        font-size: 30px !important;
+        color: #fff;
+        vertical-align: middle;
+        text-align: center;
+        font-family: 'omnes', Arial, sans-serif;
+    }
+
+    .bootstrap table ul {
+        margin-bottom: 0px !important;
+        margin-left: 20px !important;
+    }
+
+    .promo-banner {
+        padding-top: 15px;
+    }
+
+    .product-btn {
+        padding-top: 15px;
+    }
+
+    /****** MOBILE FIXES ******/
+    @media only screen and (min-width : 768px) {
+        .mobile_device_375px {
+            display: none;
+        }
+    }
+
+    @media only screen and (max-width : 767px) {
+        .mobile_device_375px {
+            display: block;
+        }
+
+        .desktop {
+            display: none;
+        }
+    }
+
+    .breadcrumbs {
+        font-family: 'omnes', Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        color: #fff !important;
+        padding-bottom: 35px;
+        padding-top: 30px;
+    }
+
+    .breadcrumbs span {
+        font-size: 16px !important;
+    }
+
+    .breadcrumbs .active {
+        color: #5e5e5e;
+        font-size: 16px;
+    }
+
+    #breadcumbs.breadcrumbs a:hover {
+        text-decoration: none !important;
+        color: #1790CC !important;
+    }
+
+    .hero-button {
+        position: absolute;
+        50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        bottom: 0;
+    }
+
+    .bootstrap .breadcrumbs a {
+        color: #5e5e5e !important;
+        font-family: 'omnes', Arial, sans-serif;
+        font-size: 16px;
+    }
+
+</style>
+<!-- Header - set the background image for the header in the line below -->
+<!--header class="py-5 bg-image-full" style="background-image: url('img/v-3.jpg'); background-repeat: no-repeat; background-position: center; height: 1440px; height:91px;">
+</header -->
+<div class="bootstrap">
+    <div class="container fixed-width">
+        <div class="row">
+            <div class="col--lg-12 col--md-12 col--xs-12">
+                <p id="breadcumbs" class="breadcrumbs"><a data-track-click="on-page-interaction" data-track-id="napoleon-breadcrumbs-dream" href="https://rewards.airmiles.ca/merchandise/">Merchandise Rewards</a>&nbsp;<span>&gt;</span>&nbsp;<a data-track-click="on-page-interaction" data-track-id="napoleon-breadcrumbs-brandstore" href="https://rewards.airmiles.ca/merchandise/splash/brand-spotlight/">Brand Spotlight</a>&nbsp;<span>&gt;</span>&nbsp;<span class="active">Napoleon</span></p>
+            </div>
+        </div>
+    </div>
+    <div class="container fixed-width">
+        <!-- Header -->
+        <div class="row align-items-center justify-content-center">
+            <div class="col--lg-12 img-header">
+
+                <img alt="Napoleon Banner" class="header-image" src="img/np-header-V3-EN.jpg"> <a href="https://rewards.airmiles.ca/merchandise/splash/napoleon/"><img class="logo-center" src="img/napoleon-logo.png" /></a>
+                <a href="https://rewards.airmiles.ca/merchandise/C-NAPOLEON" data-track-id="napoleon-hero-button" data-track-click="on-page-interaction" class="desktop hero-button">
+                    <button class="am-button am-button--primary" style="font-size: 16px; font-family: 'omnes', Arial, sans-serif; ">See all Rewards</button>
+                </a>
+
+
+
+            </div>
+        </div>
+        <!-- End of Header -->
+        <!-- Product Buttons -->
+        <div class="row align-items-center justify-content-center mobile_device_375px">
+            <div class="col--lg-12 col--md-12 col--sm-12 pr-2 product-btn">
+                <a href="https://rewards.airmiles.ca/merchandise/C-NAPOLEON" data-track-id="napoleon-hero-button" data-track-click="on-page-interaction">
+                    <button class="am-button am-button--primary mobile-button-center" style="font-size: 16px; font-family: 'omnes', Arial, sans-serif; ">See all Rewards</button>
+                </a>
+            </div>
+        </div>
+        <div class="row align-items-center justify-content-center">
+            <div class="col--lg-6 col--md-6 col--sm-6 pr-2 product-btn">
+                <a href="https://rewards.airmiles.ca/merchandise/products/prestige-pro-series-gas-grills" data-track-id="prestige-pro-gas-grills-button" data-track-click="on-page-interaction"><img alt="Prestige Pro Series Button" src="img/prestige-pro-btn.png" /></a></div>
+            <div class="col--lg-6 col--md-6 col--sm-6 pl-2 product-btn">
+                <a href="https://rewards.airmiles.ca/merchandise/products/prestige-series-gas-grills" data-track-id="prestige-gas-grills-button" data-track-click="on-page-interaction"><img alt="Prestige Series Button" src="img/prestige-btn-V2.png" /></a></div>
+        </div>
+        <div class="row py-3 align-items-center justify-content-center">
+            <div class="col--lg-6 col--md-6 col--sm-6 pl-2 product-btn">
+                <a href="https://rewards.airmiles.ca/merchandise/rogue-series-gas-grills/c-nap-rog" data-track-id="rogue-gas-grills-button" data-track-click="on-page-interaction"><img alt="Grill Accessories Button" src="img/rogue-btn-V2.png" /></a></div>
+            <div class="col--lg-6 col--md-6 col--sm-6 pr-2 product-btn">
+                <a href="https://rewards.airmiles.ca/merchandise/products/portable-grills-and-patioflame" data-track-id="portable-grills-patioflames-button" data-track-click="on-page-interaction"><img alt="Portable Grills and Patioflame Button" src="img/accessories-btn-V2.png" /></a></div>
+        </div>
+        <!-- End of Product Buttons -->
+        <!-- Napoleon Video -->
+        <div class="row border-bottom">
+            <div class="col--lg-6 col--md-6 col--xs-12 pr-2">
+                <iframe allow="autoplay; encrypted-media" allowfullscreen="" frameborder="0" height="268" src="https://www.youtube.com/embed/Lau8iMsmHRA" width="100%"></iframe></div>
+            <div class="col--lg-6 col--md-6 col--xs-12 pl-2">
+                <h2>
+                    Napoleon Grills</h2>
+                <p>
+                    Napoleon takes the art of grilling to a higher level. Every feature, every material is engineered to give ultimate performance so that you can create unforgettable meals and memorable moments. And, like you, we’re not just some rookie behind the grill – Napoleon is a family-owned company with more than 20 passionate years of grill-making experience. Every great meal starts with the best ingredients. Start yours with the best grill out there: Napoleon.</p>
+            </div>
+        </div>
+        <!-- End of Napoleon Video -->
+        <!-- Prestige Pro Product -->
+        <div class="row border-bottom">
+            <div class="col--lg-5 col--md-5 col--sm-5 pl-2 mobile_device_375px">
+                <img alt="Prestige Pro Series" src="img/prestige-pro-product.png" />
+            </div>
+            <div class="col--lg-7 col--md-7 col--sm-7 pr-2">
+                <h2>
+                    Prestige PRO<sup>TM</sup> Series Grills</h2>
+                <p>
+                    Napoleon’s Prestige PRO Series proves that cars aren’t the only things that have style and performance in one package. This slick grill looks and performs like its name. The Prestige PRO series with Infrared Side and Rear Burners is a professional style grill, built with high-quality, high-performance features that make grilling easy and impressive.</p>
+                <a href="https://rewards.airmiles.ca/merchandise/products/prestige-pro-series-gas-grills" data-track-id="prestige-pro-use-miles-button" data-track-click="on-page-interaction"><button class="am-button am-button--primary mobile-button-center" style="font-size: 16px; font-family: 'omnes', Arial, sans-serif;">Use Miles</button></a>
+                <p class="avail-text">
+                    Available in natural gas and propane.</p>
+            </div>
+            <div class="col--lg-5 col--md-5 col--sm-5 pl-2 desktop">
+                <img alt="Prestige Pro Series" src="img/prestige-pro-product.png" />
+            </div>
+        </div>
+        <!-- End of Prestige Pro Product -->
+        <!-- Prestige Product -->
+        <div class="row border-bottom">
+            <div class="col--lg-5 col--md-5 col--sm-5 pr-2">
+                <img alt="Prestige Series" src="img/prestige-product-V3.png" /></div>
+            <div class="col--lg-7 col--md-7 col--sm-7 pl-2">
+                <h2>
+                    Prestige<sup>&reg;</sup> Series Gas Grills</h2>
+                <p>
+                    The Napoleon Prestige series is the total grilling package: a cart model natural gas grill with the capabilities of an outdoor kitchen. With four main burners, and Infrared Side and Rear Burners, this grill allows you to use eight unique cooking styles. Not just durable on the outside, the same quality stainless steel is used under the lid for the basin, tube burners, dual-level sear plates and cooking grids.</p>
+                <a href="https://rewards.airmiles.ca/merchandise/products/prestige-series-gas-grills" data-track-id="prestige-gas-grills-use-miles-button" data-track-click="on-page-interaction"><button class="am-button am-button--primary mobile-button-center" style="font-size: 16px; font-family: 'omnes', Arial, sans-serif;">Use Miles</button></a>
+                <p class="avail-text">
+                    Available in natural gas and propane.</p>
+            </div>
+        </div>
+        <!-- End of Prestige -->
+        <!-- Rogue Product -->
+        <div class="row border-bottom">
+            <div class="col--lg-5 col--md-5 col--sm-5 pl-2 mobile_device_375px">
+                <img alt="Prestige Pro Series" src="img/rogue-product-V2.png" />
+            </div>
+            <div class="col--lg-7 col--md-7 col--sm-7 pr-2">
+                <h2>
+                    Rogue<sup>&reg;</sup> Series Grills</h2>
+                <p>
+                    Napoleon’s Rogue Series is perfect for the seasoned outdoor cook who’s looking for a quality grill that provides all the features of a prodigious grill but takes up the space of something a little more portable. No other grill gives you such versatility at such an affordable price.
+                </p>
+                <a href="https://rewards.airmiles.ca/merchandise/products/rogue-series-gas-grills" data-track-id="rogue-grills-use-miles-button" data-track-click="on-page-interaction"><button class="am-button am-button--primary mobile-button-center" style="font-size: 16px; font-family: 'omnes', Arial, sans-serif;">Use Miles</button></a>
+                <p class="avail-text">
+                    Available in natural gas and propane.</p>
+            </div>
+            <div class="col--lg-5 col--md-5 col--sm-5 pl-2 desktop">
+                <img alt="Prestige Pro Series" src="img/rogue-product-V2.png" />
+            </div>
+        </div>
+        <!-- End of Rogue Product -->
+        <!-- Portable Grills Product -->
+        <div class="row border-bottom">
+            <div class="col--lg-4 col--md-4 col--sm-4 pl-2">
+                <img alt="Portable Grills and Patioflame" src="img/portablegrill-patioflame-product-V2.png" /></div>
+            <div class="col--lg-8 col--md-8 col--sm-8 pr-2">
+                <h2>
+                    Patio Heater’s and Patioflame<sup>&reg;</sup> Series</h2>
+                <p>
+                    Gather with your family and friends around the warm, radiant heat from Napoleon’s outdoor heating series. With a Napoleon Patioflame Table or Patio Heater, you can have the campfire/fire pit experience in your backyard without the mess and work, or regulations, of a real wood fire. Bring the excitement of a custom outdoor fire pit to your home and experience the ambiance that only the glow of a fire can provide.</p>
+                <a href="https://rewards.airmiles.ca/merchandise/products/portable-grills-and-patioflame" data-track-id="portable-patioflames-use-miles-button" data-track-click="on-page-interaction"><button class="am-button am-button--primary mobile-button-center" style="font-size: 16px; font-family: 'omnes', Arial, sans-serif;">Use Miles</button></a>
+            </div>
+        </div>
+        <!-- End of Portable Grills Product -->
+        <!-- Grill Accessories -->
+        <div class="row border-bottom-none">
+            <div class="col--lg-6 col--md-6 col--sm-6 pr-2 mobile_device_375px">
+                <img alt="Grill Accessories" src="img/accessories-product.png" />
+            </div>
+            <div class="col--lg-6 col--md-6 col--sm-6 pl-2">
+                <h2>
+                    Grill Accessories</h2>
+                <p>
+                    Upgrade your grilling accessories. From preminum covers to charcoal smoker accessories and maintenance, Napoleon has the grilling accessories to take your barbecuing to the next level.
+                </p>
+                <a href="https://rewards.airmiles.ca/merchandise/products/napoleon-grill-accessories" data-track-id="grill-accessories-use-miles-button" data-track-click="on-page-interaction"><button class="am-button am-button--primary mobile-button-center" style="font-size: 16px; font-family: 'omnes', Arial, sans-serif; ">Use Miles</button></a>
+            </div>
+            <div class="col--lg-6 col--md-6 col--sm-6 pr-2 desktop">
+                <img alt="Grill Accessories" src="img/accessories-product.png" />
+            </div>
+        </div>
+        <!-- End of Grill Accessories -->
+
+        <div class="row border-bottom-none">
+            <div class="col--lg-12 col--md-12 col--sm-12" style="text-align: center;">
+                <p style="font-size: 12px;">Check out Napoleon’s Product Warranty to get warranty information pertaining to all 2019 Grill models.</p>
+            </div>
+        </div>
+
+        <!-- Pros Cons Table -->
+        <div class="row align-items-center justify-content-center napoleon-table">
+            <div class="col--lg-12">
+                <img alt="Which Grill Is Right For You?" src="img/natural-propane-table.jpg" /></div>
+            <div class="col--lg-12">
+                <table class="table table-bordered" style="border: 2px solid #fff; vertical-align: middle; padding: 22px;">
+                    <tbody>
+                        <tr>
+                            <th class="table-title" scope="row" style="background-color: #15a4aa;padding: 22px;vertical-align: middle; font-family: 'omnes', Arial, sans-serif; border: 2px solid #fff; " width="158px">
+                                PROS</th>
+                            <td style="background-color: #f3f3f3; vertical-align: middle;padding: 22px; border: 2px solid #fff; " width="408px">
+                                <ul>
+                                    <li>
+                                        Never run out</li>
+                                    <li>
+                                        Less expensive in the long run</li>
+                                </ul>
+                            </td>
+                            <td style="background-color: #f3f3f3; vertical-align: middle; padding: 22px; font-family: 'omnes', Arial, sans-serif; border: 2px solid #fff; " width="408px">
+                                <ul>
+                                    <li>
+                                        Portable</li>
+                                    <li>
+                                        Burns hotter than NG</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="table-title" scope="row" style="background-color: #fcb813; padding: 22px;vertical-align: middle; border: 2px solid #fff; ">
+                                CONS</th>
+                            <td style="background-color: #f3f3f3; vertical-align: middle;padding: 22px; font-family: 'omnes', Arial, sans-serif;">
+                                <ul>
+                                    <li>
+                                        Grill stays put</li>
+                                    <li>
+                                        Installation requires pro and could cost</li>
+                                </ul>
+                            </td>
+                            <td style="background-color: #f3f3f3; vertical-align: middle;padding: 22px; font-family: 'omnes', Arial, sans-serif; border: 2px solid #fff; ">
+                                <ul>
+                                    <li>
+                                        Can run out</li>
+                                    <li>
+                                        Cannot use with NG Grill</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- End of Pros Cons Table -->
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
